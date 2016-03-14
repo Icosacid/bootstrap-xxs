@@ -1,8 +1,8 @@
 /**
  * Bootstrap XXS
  *
- * @author Alexandre Andrieux <aland@smile.fr, alex@icosacid.com>
- * @since 2016-01-20
+ * Alexandre Andrieux @Smile
+ * aland@smile.fr
  *
  * This file extends Twitter Bootstrap to add a 480px breakpoint
  * Load it right after bootstrap.css
@@ -10,6 +10,8 @@
  * You can now use new extra classes:
  * .col-xxs-*, .col-xxs-pull-*, .col-xxs-push-*, .col-xxs-offset-*, .visible-xxs, .hidden-xxs
  *
+ * @author Alexandre Andrieux <aland@smile.fr>
+ * @since 01-2016
  *
  * Note: XS is the base of Bootstrap layout. Rather than overriding the whole grid system,
  * most XXS rules are wrapped in @media queries. Keeps the number of lines low.
@@ -402,7 +404,7 @@
 }
 
 @media (max-width: 479px) {
-  .visible-xs {
+  .visible-xs:not(.visible-xxs) {
     display: none !important;
   }
 }
@@ -422,4 +424,3 @@
     display: table-cell !important;
   }
 }
-
